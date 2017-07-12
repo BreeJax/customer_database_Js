@@ -5,15 +5,20 @@ for (var i = 0; i < customers.results.length; i++) {
   img.src = customers.results[i].picture.large
   _li.appendChild(img)
 
-  let dob = customers.results[i].dob
-  let dobElement = document.createElement("h6")
-  dobElement.innerHTML = dob
-  _li.appendChild(dobElement)
-
   let name = customers.results[i].name
-  let nameElement = document.createElement("h7")
-  nameElement.innerHTML = name
+  let nameElement = document.createElement("h2")
+  nameElement.innerHTML = `${name.first} ${name.last} `
   _li.appendChild(nameElement)
+
+  let location = customers.results[i].location
+  let locationElement = document.createElement("h7")
+  locationElement.innerHTML = `${location.street} ${location.city}`
+  _li.appendChild(locationElement)
+
+  let location2 = customers.results[i].location
+  let location2Element = document.createElement("h7")
+  location2Element.innerHTML = `${location2.state} ${location2.postcode}`
+  _li.appendChild(location2Element)
 
   document.querySelector("ul").appendChild(_li)
 }

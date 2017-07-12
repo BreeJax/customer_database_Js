@@ -12,12 +12,16 @@ ul {
 li {
   padding: 1em;
   text-align: center;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
 }
-#name {
+h2 {
   border-bottom: green;
-  border-style: solid;
+  border-bottom-style: solid;
+  width: 10em;
 }
 img {
-  height: 18em;
-  width: 18em;
+  height: 50%;
+  width: 80%;
 }
