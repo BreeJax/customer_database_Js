@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  padding: 1em;
+  text-align: center;
+}
+#name {
+  border-bottom: green;
+  border-style: solid;
+}
+img {
+  height: 18em;
+  width: 18em;
+}
