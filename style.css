@@ -28,3 +28,14 @@ p {
   padding-top: 0;
   margin-top: 0;
 }
+
+h4 {
+   color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+h4:hover {
+  color: black;
+  text-shadow: none;
+  transition-delay: 1s;
+}
